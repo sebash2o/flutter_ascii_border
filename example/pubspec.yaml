@@ -1,0 +1,37 @@
+name: example
+description: An example usage of the ASCII border package.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  asciiborder:
+    path: ../
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - images/
+
+  fonts:
+    - family: GochiHand
+      fonts:
+        - asset: fonts/GochiHand-Regular.ttf
+    - family: SourceCodePro
+      fonts:
+        - asset: fonts/SourceCodePro-Regular.ttf
